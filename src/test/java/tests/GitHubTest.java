@@ -10,7 +10,7 @@ import static io.qameta.allure.Allure.step;
 public class GitHubTest extends TestBase{
 
     @Test
-    public void testWebDriver() {
+    public void checkTitle() {
         open("https://github.com/");
         step("Check title", () -> {
             $(".font-mktg").shouldHave(text(" Where the world builds software ")) ;
